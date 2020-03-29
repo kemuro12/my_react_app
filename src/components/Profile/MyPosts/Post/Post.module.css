@@ -1,0 +1,17 @@
+.item{
+    display:flex;
+    background:rgb(231,231,231,0.6);
+    width:100%;
+    margin-top:15px;
+    
+}
+.item img{
+    width:30px;
+}
+.text{
+    margin-top:10px;
+    margin-left:5px;
+    display:flex;
+    width:95%;
+    justify-content: space-between;
+}

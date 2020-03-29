@@ -1,0 +1,12 @@
+.block{
+    display:flex;
+    background:rgb(231,231,231);
+    border-radius: 10px;
+}
+.block img{
+    width:100px;
+    border-radius: 10px;
+}
+.info{
+    color:black;
+}

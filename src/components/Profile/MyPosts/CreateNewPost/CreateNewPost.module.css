@@ -1,0 +1,14 @@
+.new_post button{
+    position: relative;
+    top:5px;
+    left:calc(100% - (120px + 5px));
+}
+.textarea{
+    background:rgb(231,231,231);
+    height: 70px;
+    width:100%;
+}
+.create-new-post button{
+    position: relative;
+    left:50px;
+}

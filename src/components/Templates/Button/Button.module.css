@@ -1,0 +1,12 @@
+.item{
+    background:rgb(7,181,104);
+    color:white;
+    font-size:18px;
+    border:0px;
+    padding:5px 20px;
+    cursor:pointer;
+    border-radius:3px;
+}
+.item:hover{ 
+    background:rgb(0,154,77);
+}

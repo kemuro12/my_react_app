@@ -1,0 +1,16 @@
+.block{
+    background:rgb(7,181,104);
+    grid-area: sidebar;
+}
+.block a{
+    color:white;
+}
+.block ul li{
+    text-align:center;
+}
+.block ul{
+    padding-left:0px;
+}
+.active{
+    color:red !important;
+}
