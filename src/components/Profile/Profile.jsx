@@ -6,7 +6,7 @@ import MyPosts from './MyPosts/MyPosts'
 const Profile = () => {
     return (
         <div className={s.block}>
-            <img src="https://blog.tutoronline.ru/media/621769/best-fishing-spots-emt.jpg" />
+            <img alt="avatar" src="https://blog.tutoronline.ru/media/621769/best-fishing-spots-emt.jpg" />
             <h3>Мой профиль</h3>
 
             <PeopleCard />

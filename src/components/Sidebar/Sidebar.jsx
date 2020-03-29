@@ -1,16 +1,31 @@
 import React from 'react';
 import s from './Sidebar.module.css';
 import { NavLink } from 'react-router-dom';
+import PersonInCircle from '../Templates/PersonInCircle/PersonInCircle';
 
-const Sidebar = () => {
+const Sidebar = (props) => {
+
+    let linkElements = props.sideBarLinks.map(el => 
+        <div>
+            <NavLink to={el.link} activeClassName={s.active}>
+                <li>{el.name}</li>
+            </NavLink>
+            {el.name == "Друзья" ?
+                <div className={s.friendBlock}>
+                    <PersonInCircle img={props.friendsList[3].img} />
+                    <PersonInCircle img={props.friendsList[1].img} />
+                    <PersonInCircle img={props.friendsList[2].img} />
+                </div>
+                :
+                ""
+            }
+        </div>
+    )
+
     return (
         <div className={s.block}>
             <ul>
-                <NavLink to="/profile" activeClassName={s.active}><li>Профиль</li></NavLink>
-                <NavLink to="/dialogs" activeClassName={s.active}><li>Диалоги</li></NavLink>
-                <NavLink to="/news" activeClassName={s.active}><li>Новости</li></NavLink>
-                <NavLink to="/music" activeClassName={s.active}><li>Музыка</li></NavLink>
-                <NavLink to="/123" activeClassName={s.active}><li>Страница 5</li></NavLink>
+                {linkElements}
             </ul>
         </div>
     )

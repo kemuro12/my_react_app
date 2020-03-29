@@ -1,0 +1,22 @@
+.block{
+    color:black;
+}
+.block img{
+    width:28px;
+    line-height: 20px;
+}
+.leftMessage{
+    width:100%;
+    display:block;
+    text-align: left;
+}
+.rightMessage{
+    width:100%;
+    display:block;
+    text-align:right;
+}
+.text{
+    position: relative;
+    top:-7px;
+    margin: 0px 5px;
+}
