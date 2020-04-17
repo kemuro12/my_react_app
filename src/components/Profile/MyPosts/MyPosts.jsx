@@ -3,17 +3,17 @@ import s from './MyPosts.module.css';
 import CreateNewPost from './CreateNewPost/CreateNewPost'
 import Post from './Post/Post'
 
-const MyPosts = () => {
+const MyPosts = (props) => {
+
+    let postsElements = props.state.posts.map(el => (<Post postText={el.text} likes={el.likes} />));
+
     return (
         <div className={s.block}>
             <h3>Мои посты</h3>
 
-            <CreateNewPost />
-
-            <Post postText="Hello world" likes="2" />
-            <Post postText="Coronavirus in Russia!" likes="6" />
-            <Post postText="TSU has Locked" likes="11" />
-            <Post postText="Good Game" likes="1" />
+            <CreateNewPost textOnNewPost={props.state.textOnNewPost} dispatch={props.dispatch}/>
+            {postsElements}
+            
         </div>
     )
 }

@@ -15,6 +15,7 @@ const Message = (props) => {
                 <span className={s.text}>{props.message}</span>
             </div>
             }
+            
 
         </div>
     )

@@ -3,7 +3,7 @@ import s from './Button.module.css';
 
 const Button = (props) => {
     return (
-        <button className={s.item}>
+        <button className={s.item} onClick={props.clickCallback}>
             {props.name}
         </button>
     )
