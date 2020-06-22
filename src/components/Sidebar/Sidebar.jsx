@@ -5,16 +5,16 @@ import PersonInCircle from '../Templates/PersonInCircle/PersonInCircle';
 
 const Sidebar = (props) => {
 
-    let linkElements = props.sideBarLinks.map(el => 
+    let linkElements = props.sidebar.map(el => 
         <div>
             <NavLink to={el.link} activeClassName={s.active}>
                 <li>{el.name}</li>
             </NavLink>
             {el.name == "Друзья" ?
                 <div className={s.friendBlock}>
-                    <PersonInCircle img={props.friendsList[3].img} />
-                    <PersonInCircle img={props.friendsList[1].img} />
-                    <PersonInCircle img={props.friendsList[2].img} />
+                    <PersonInCircle img={props.dialogsPage.dialogs[3].img} />
+                    <PersonInCircle img={props.dialogsPage.dialogs[1].img} />
+                    <PersonInCircle img={props.dialogsPage.dialogs[2].img} />
                 </div>
                 :
                 ""
